@@ -1,0 +1,172 @@
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (patient:Patient {id: toInteger(csvLine.id_x)}), (exposure:Exposure {id: toInteger(csvLine.id_y)})
+CREATE (patient)-[:EXPOSED_TO {name: csvLine.Relationship}]->(exposure)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (patient:Patient {id: toInteger(csvLine.id_x)}), (disease:Disease {id: toInteger(csvLine.id_y)})
+CREATE (patient)-[:HAS {name: csvLine.Relationship}]->(disease)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (patient:Patient {id: toInteger(csvLine.id_x)}), (medication:Medication {id: toInteger(csvLine.id_y)})
+CREATE (patient)-[:TAKES {name: csvLine.Relationship}]->(medication)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (exposure:Exposure {id: toInteger(csvLine.id_x)}), (gene:Gene {id: toInteger(csvLine.id_y)})
+CREATE (exposure)-[:INTERACTS_WITH {name: csvLine.Relationship}]->(gene)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (exposure:Exposure {id: toInteger(csvLine.id_x)}), (disease:Disease {id: toInteger(csvLine.id_y)})
+CREATE (exposure)-[:LINKED_TO {name: csvLine.Relationship}]->(disease)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (exposure:Exposure {id: toInteger(csvLine.id_x)}), (bp:BP {id: toInteger(csvLine.id_y)})
+CREATE (exposure)-[:INTERACTS_WITH {name: csvLine.Relationship}]->(bp)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (exposure:Exposure {id: toInteger(csvLine.id_x)}), (cc:CC {id: toInteger(csvLine.id_y)})
+CREATE (exposure)-[:INTERACTS_WITH {name: csvLine.Relationship}]->(cc)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (exposure:Exposure {id: toInteger(csvLine.id_x)}), (mf:MF {id: toInteger(csvLine.id_y)})
+CREATE (exposure)-[:INTERACTS_WITH {name: csvLine.Relationship}]->(mf)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (bp:BP {id: toInteger(csvLine.id_x)}), (gene:Gene {id: toInteger(csvLine.id_y)})
+CREATE (bp)-[:INTERACTS_WITH {name: csvLine.Relationship}]->(gene)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (cc:CC {id: toInteger(csvLine.id_x)}), (gene:Gene {id: toInteger(csvLine.id_y)})
+CREATE (cc)-[:INTERACTS_WITH {name: csvLine.Relationship}]->(gene)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (mf:MF {id: toInteger(csvLine.id_x)}), (gene:Gene {id: toInteger(csvLine.id_y)})
+CREATE (mf)-[:INTERACTS_WITH {name: csvLine.Relationship}]->(gene)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (gene:Gene {id: toInteger(csvLine.id_x)}), (pathway:Pathway {id: toInteger(csvLine.id_y)})
+CREATE (gene)-[:ASSOCIATED_WITH {name: csvLine.Relationship}]->(pathway)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (gene:Gene {id: toInteger(csvLine.id_x)}), (anatomy:Anatomy {id: toInteger(csvLine.id_y)})
+CREATE (gene)-[:ASSOCIATED_WITH {name: csvLine.Relationship}]->(anatomy)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (gene:Gene {id: toInteger(csvLine.id_x)}), (disease:Disease{id: toInteger(csvLine.id_y)})
+CREATE (gene)-[:ASSOCIATED_WITH {name: csvLine.Relationship}]->(disease)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (gene:Gene {id: toInteger(csvLine.id_x)}), (phenotype:Phenotype{id: toInteger(csvLine.id_y)})
+CREATE (gene)-[:ASSOCIATED_WITH {name: csvLine.Relationship}]->(phenotype)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (gene:Gene {id: toInteger(csvLine.id_x)}), (medication:Medication{id: toInteger(csvLine.id_y)})
+CREATE (gene)-[:ASSOCIATED_WITH {name: csvLine.Relationship}]->(medication)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (medication:Medication{id: toInteger(csvLine.id_x)}), (phenotype:Phenotype{id: toInteger(csvLine.id_y)})
+CREATE (medication)-[:ASSOCIATED_WITH {name: csvLine.Relationship}]->(phenotype)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (medication:Medication{id: toInteger(csvLine.id_x)}), (disease:Disease{id: toInteger(csvLine.id_y)})
+CREATE (medication)-[:ASSOCIATED_WITH {name: csvLine.Relationship}]->(disease)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (phenotype:Phenotype{id: toInteger(csvLine.id_x)}), (disease:Disease{id: toInteger(csvLine.id_y)})
+CREATE (phenotype)-[:ASSOCIATED_WITH {name: csvLine.Relationship}]->(disease)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (gene1:Gene {id: toInteger(csvLine.id_x)}), (gene2:Gene {id: toInteger(csvLine.id_y)})
+CREATE (gene1)-[:INTERACTS_WITH {name: csvLine.Relationship}]->(gene2)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (cmr:CMR {id: toInteger(csvLine.id_x)}), (anatomy:Anatomy{id: toInteger(csvLine.id_y)})
+CREATE (cmr)-[:RELATED_TO {name: csvLine.Relationship}]->(anatomy)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (phenotype:Phenotype {id: toInteger(csvLine.id_x)}), (cmr:CMR {id: toInteger(csvLine.id_y)})
+CREATE (phenotype)-[:ASSESSED_BY {name: csvLine.Relationship}]->(cmr)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (patient:Patient {id: toInteger(csvLine.id_x)}), (cmr:CMR {id: toInteger(csvLine.id_y)})
+CREATE (patient)-[:HAS {name: csvLine.Relationship, value:csvLine.Value}]->(cmr)
+}IN TRANSACTIONS OF 10000 ROWS;
+
+
+:auto LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS csvLine
+CALL {
+ WITH csvLine
+ MATCH (disease:Disease {id: toInteger(csvLine.id_x)}), (cmr:CMR {id: toInteger(csvLine.id_y)})
+CREATE (disease)-[:HAS {name: csvLine.Relationship, value:csvLine.Value}]->(cmr)
+}IN TRANSACTIONS OF 10000 ROWS
+
+
