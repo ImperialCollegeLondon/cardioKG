@@ -1,0 +1,56 @@
+LOAD CSV WITH HEADERS FROM "file:///Patient.csv" AS csvLine
+CREATE (patient:Patient {
+id: toInteger(csvLine.id), 
+name: csvLine.fname,
+age_at_MRI: toInteger(csvLine.age_at_MRI),
+Sex: toInteger(csvLine.Sex),
+Ethnicity: toInteger(csvLine.Ethnicity),
+BMI: toInteger(csvLine.BMI),
+BSA: toInteger(csvLine.BSA)
+});
+
+LOAD CSV WITH HEADERS FROM "file:///Anatomical.csv" AS csvLine
+CREATE (anatomy:Anatomy {
+id: toInteger(csvLine.id), 
+name: csvLine.fname
+});
+
+LOAD CSV WITH HEADERS FROM "file:///Exposure.csv" AS csvLine
+CREATE (Exposure:Exposure{id: toInteger(csvLine.id), name: csvLine.fname})
+;
+
+LOAD CSV WITH HEADERS FROM "file:///Disease.csv" AS csvLine
+CREATE (disease:Disease {id: toInteger(csvLine.id), name: csvLine.fname})
+;
+
+LOAD CSV WITH HEADERS FROM "file:///Medication.csv" AS csvLine
+CREATE (medication:Medication {id: toInteger(csvLine.id), name: csvLine.fname})
+;
+
+LOAD CSV WITH HEADERS FROM "file:///CC.csv" AS csvLine
+CREATE (cc:CC {id: toInteger(csvLine.id), name: csvLine.fname})
+;
+
+LOAD CSV WITH HEADERS FROM "file:///MF.csv" AS csvLine
+CREATE (mf:MF {id: toInteger(csvLine.id), name: csvLine.fname})
+;
+
+LOAD CSV WITH HEADERS FROM "file:///BP.csv" AS csvLine
+CREATE (bp:BP {id: toInteger(csvLine.id), name: csvLine.fname})
+;
+
+LOAD CSV WITH HEADERS FROM "file:///Gene.csv" AS csvLine
+CREATE (gene:Gene {id: toInteger(csvLine.id), name: csvLine.fname})
+;
+
+LOAD CSV WITH HEADERS FROM "file:///Pathway.csv" AS csvLine
+CREATE (pathway:Pathway {id: toInteger(csvLine.id), name: csvLine.fname})
+;
+
+LOAD CSV WITH HEADERS FROM "file:///Phenotype.csv" AS csvLine
+CREATE (phenotype:Phenotype {id: toInteger(csvLine.id), name: csvLine.fname})
+;
+
+LOAD CSV WITH HEADERS FROM "file:///CMR.csv" AS csvLine
+CREATE (cmr:CMR{id: toInteger(csvLine.id), name: csvLine.fname})
+;
