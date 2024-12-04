@@ -27,10 +27,10 @@ uri = "bolt://localhost:7687"
 user = "neo4j"
 password= "*********"
 gds = GraphDataScience(uri, auth=(user, password))
-```
-<br/>
-### Predicting novel gene-disease association:
 
+```
+
+### Predicting novel gene-disease association:
 #### 1.Heart Filaure:
 ##### A.Using CMR features:
 We node to run the cypher code "cypher_for_creating_nodes.txt" in the Building KG folder using neo4j browser. Then  
