@@ -14,6 +14,7 @@ TO run the code properly, we need to install the following software:
    
 ```bash
 pip install neo4j
+pip install neo4jupyter
 ```
 ### Predicting novel gene-disease association:
 
