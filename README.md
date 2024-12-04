@@ -19,7 +19,7 @@ TO run the code properly, we need to install the following software:
 ### Coonecting Jupyter notebook to neo4j:
 1. Run neo4j desktop.
 2. Run jupyetr notebook from Anaconde.
-3. Run the follwing code:
+3. In Jupyter notebook, run the follwing code:
  ```python
 from graphdatascience import GraphDataScience
 from neo4j import GraphDatabase
