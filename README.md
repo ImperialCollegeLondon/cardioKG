@@ -10,7 +10,9 @@ TO run the code properly, we need to install the following software:
 1. neo4j Desktop v 5.20.0
 2. Python v 3.12.1
 3. Anacnda3 2023.09-0
-4. In Jupyter notebook, install ne4j library (pip install neo4j)
+4. In Jupyter notebook, install ne4j library
+```bash
+pip install neo4j
 <br/>
 ### Predicting novel gene-disease association:
 
