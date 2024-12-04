@@ -33,5 +33,5 @@ gds = GraphDataScience(uri, auth=(user, password))
 ### Predicting novel gene-disease association:
 #### 1.Heart Filaure:
 ##### A.Using CMR features:
-We node to run the cypher code "cypher_for_creating_nodes.txt" in the Building KG folder using neo4j browser. Then  
+We node to run the cypher code ```plaintext cypher_for_creating_nodes.txt ``` in the ```plaintext Building KG ``` folder using neo4j browser. Then  
 The CMR features were integratd as nodes in the KG and the value of the CMR features were used as properties on the relationships. To bu 
