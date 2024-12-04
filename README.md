@@ -16,8 +16,22 @@ TO run the code properly, we need to install the following software:
 !pip install neo4j
 !pip install neo4jupyter
 ```
+### Coonecting Jupyter notebook to neo4j:
+1. Run neo4j desktop.
+2. Run jupyetr notebook from Anaconde.
+3. Run the follwing code:
+ ```python
+from graphdatascience import GraphDataScience
+from neo4j import GraphDatabase
+uri = "bolt://localhost:7687"
+user = "neo4j"
+password= "*********"
+gds = GraphDataScience(uri, auth=(user, password))
+```
+<br/>
 ### Predicting novel gene-disease association:
 
 #### 1.Heart Filaure:
 ##### A.Using CMR features:
+We node to run the cypher code "cypher_for_creating_nodes.txt" in the Building KG folder using neo4j browser. Then  
 The CMR features were integratd as nodes in the KG and the value of the CMR features were used as properties on the relationships. To bu 
