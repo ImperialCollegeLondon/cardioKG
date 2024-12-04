@@ -33,5 +33,7 @@ gds = GraphDataScience(uri, auth=(user, password))
 ### Predicting novel gene-disease association:
 #### 1.Heart Filaure:
 ##### A.Using CMR features:
-We node to run the cypher code ```plaintext cypher_for_creating_nodes.txt``` in the ```Building KG``` folder using ```neo4j``` browser. Then, we need to add the edges between the created nodes by running the cypher code in ```Cypher_to_add_edges_between_nodes.txt```. 
-The CMR features were integratd as nodes in the KG and the value of the CMR features were used as properties on the relationships. To bu 
+1. We node to run the cypher code ```plaintext cypher_for_creating_nodes.txt``` in the ```Building KG``` folder using ```neo4j``` browser. Then, we need to add the edges between the created nodes by running the cypher code in ```Cypher_to_add_edges_between_nodes.txt```. After runing the two cypher code, the KG will be created.
+2. To generate he embeedings, we need to runt the jupyter notebook ```Generate_embeddings_aftre_adding_CMR_as_nodes_shared.ipynb``` in ```Predicting gene-disease association (HF)\Using CMR features``` folder.
+3. To predict the gene-diases association, run ```Predicting_gene_diseas_assoc_aftre_adding_CMR.ipynb``` in ```Predicting gene-disease association (HF)\Using CMR features``` folder.
+4. After predicting the genes, we pick the top ten predidected genes and perform the enrichment analysis using ```g:profiler``.
