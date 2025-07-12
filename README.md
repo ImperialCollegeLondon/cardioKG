@@ -1,4 +1,4 @@
-### CardioKG - a vision-knowledge graph:
+## CardioKG - A multi-modal vision knowledge graph of cardiovascular disease
 Knowledge graph (KG) is a structured representation of knowledge in a graph format, consisting of nodes, which represent entities or concepts, and edges, which represent the relationships between those entities. It’s a way of organizing and representing information to facilitate machine understanding and reasoning. In a knowledge graph, entities are represented as nodes, relationships as edges, and attributes as properties of nodes or edges. This structure allows for flexible querying and inference, making it useful for various applications such as semantic search, data integration, recommendation systems, and more. Knowledge graphs are particularly valuable in capturing complex relationships and semantics inherent in data, enabling more advanced forms of artificial intelligence and knowledge discovery. In healthcare, a knowledge graph serves as a powerful tool for organising, integrating, and analysing vast amounts of medical information. It enables healthcare professionals, researchers, and AI systems to efficiently access, understand, and utilize complex medical knowledge and relationships such as gene-disease association. 
 
 ### Data extraction and preparation:
@@ -37,3 +37,7 @@ gds = GraphDataScience(uri, auth=(user, password))
 2. To generate he embeddings, we need to run the Jupyter notebook ```Generate_embeddings_aftre_adding_CMR_as_nodes_shared.ipynb``` in ```Predicting gene-disease association (HF)\Using CMR features``` folder.
 3. To predict the gene-diases association, run ```Predicting_gene_diseas_assoc_aftre_adding_CMR.ipynb``` in ```Predicting gene-disease association (HF)\Using CMR features``` folder.
 4. After predicting the genes, we pick the top ten predicted genes and perform the enrichment analysis using ```g:profiler```.
+
+### Citation:
+Rjoob K, McGurk KA, Zheng SL, Curran L, Ibrahim M, Zeng L, Kim V, Tahasildar S, Kalaie S, Senevirathne DS, Gifani P, Losev V, Zheng J, Bai W, de Marvao A, Ware JS, Bender C, O’Regan DP. A multi-modal vision knowledge graph of cardiovascular disease. _medRxiv_. 2025
+   
