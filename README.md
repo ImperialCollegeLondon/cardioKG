@@ -7,7 +7,7 @@ To build the knowledge graph, we extracted the data (including entities/nodes, r
 
 
 ### Installation:
-TO run the code properly, we need to install the following software:
+To run the code install the following software:
 <br/>
 1. neo4j Desktop v 5.20.0
 2. Python v 3.12.1
