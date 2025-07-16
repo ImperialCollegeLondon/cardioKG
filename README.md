@@ -33,9 +33,18 @@ gds = GraphDataScience(uri, auth=(user, password))
 #### 1.Heart Failure:
 ##### A.Using CMR features:
 1. We need to run the cypher code ```plaintext cypher_for_creating_nodes.txt``` in the ```Building KG``` folder using ```neo4j``` browser. Then, we need to add the edges between the created nodes by running the cypher code in ```Cypher_to_add_edges_between_nodes.txt```. After running the two cypher codes, the KG will be created.
-2. To generate he embeddings, we need to run the Jupyter notebook ```Generate_embeddings_aftre_adding_CMR_as_nodes_shared.ipynb``` in ```Predicting gene-disease association (HF)\Using CMR features``` folder.
-3. To predict the gene-diases association, run ```Predicting_gene_diseas_assoc_aftre_adding_CMR.ipynb``` in ```Predicting gene-disease association (HF)\Using CMR features``` folder.
-4. After predicting the genes, we pick the top ten predicted genes and perform the enrichment analysis using ```g:profiler```.
+2. To predict the gene-diases association, run ```Predicting_gene_diseas_assoc_after_adding_CMR.ipynb``` in ```Predicting gene-disease association (HF)\Using CMR features``` folder.
+3. After predicting the genes, we pick the top ten predicted genes and perform the enrichment analysis using ```g:profiler```.
+
+##### B.Without CMR features: 
+1. got to foldr To predict the gene-diases association without CMR features, run ```Predicting_gene_diseas_assoc_before_adding_CMR (HF).ipynb``` in ```Predicting gene-disease association (HF)/Without CMR features``` folder.
+2. After predicting the genes, we pick the top ten predicted genes and perform the enrichment analysis using ```g:profiler```.
+
+#### 2.Atrial Fibrrilation:
+You need to follow the same steps in HF, but you use the AF folders and files.
+
+#### 3.Myocardial Infarction:
+You need to follow the same steps in HF and AF but you use the MI folders and files.
 
 ### Citation:
 Rjoob K, McGurk KA, Zheng SL, Curran L, Ibrahim M, Zeng L, Kim V, Tahasildar S, Kalaie S, Senevirathne DS, Gifani P, Losev V, Zheng J, Bai W, de Marvao A, Ware JS, Bender C, O’Regan DP. A multi-modal vision knowledge graph of cardiovascular disease. _medRxiv_. 2025
