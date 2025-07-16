@@ -3,6 +3,9 @@ Knowledge graph (KG) is a structured representation of knowledge in a graph form
 
 ### Data extraction and preparation:
 To build the knowledge graph, we extracted the data (including entities/nodes, relationships/edges and properties/features) from 19 different databses including the UK biobank database. The figure below shows the databases names. Five cardiovascular diseases have been considered and extracted from the UK Biobank including 1) Hypertrophic cardiomyopathy (HCM) , 2) Dilated cardiomyopathy (DCM), 3) Heart failure (HF), 4) Myocardial infarction (MI), 5) Atrial fibrillation (AF).
+![Schematic_graph.png](./Figures/Schematic_graph.png)
+
+
 ### Installation:
 TO run the code properly, we need to install the following software:
 <br/>
