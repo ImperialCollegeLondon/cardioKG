@@ -47,7 +47,7 @@ You need to follow the same steps in HF, but you use the AF folders and files.
 You need to follow the same steps in HF and AF but you use the MI folders and files.
 
 ### Importnace of the CMR features and other entities:
-Run the PageRank.ipynb script in the  ```Importance``` folde
+Run the PageRank.ipynb script in the  ```Importance``` folder.
 ### Drug Repurposing:
 For each disease, we run the scripts inside the folder that has the diease name.
 
