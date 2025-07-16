@@ -46,6 +46,11 @@ You need to follow the same steps in HF, but you use the AF folders and files.
 #### 3.Myocardial Infarction:
 You need to follow the same steps in HF and AF but you use the MI folders and files.
 
+### Importnace of the CMR features and other entities:
+Run the PageRank.ipynb script in the  ```Importance``` folde
+### Drug Repurposing:
+For each disease, we run the scripts inside the folder that has the diease name.
+
 ### Citation:
 Rjoob K, McGurk KA, Zheng SL, Curran L, Ibrahim M, Zeng L, Kim V, Tahasildar S, Kalaie S, Senevirathne DS, Gifani P, Losev V, Zheng J, Bai W, de Marvao A, Ware JS, Bender C, O’Regan DP. A multi-modal vision knowledge graph of cardiovascular disease. _medRxiv_. 2025
    
