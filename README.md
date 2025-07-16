@@ -37,19 +37,19 @@ gds = GraphDataScience(uri, auth=(user, password))
 ##### A.Using CMR features:
 1. We need to run the cypher code ```plaintext cypher_for_creating_nodes.txt``` in the ```Building KG``` folder using ```neo4j``` browser. Then, we need to add the edges between the created nodes by running the cypher code in ```Cypher_to_add_edges_between_nodes.txt```. After running the two cypher codes, the KG will be created.
 2. To predict the gene-diases association, run ```Predicting_gene_diseas_assoc_after_adding_CMR.ipynb``` in ```Predicting gene-disease association (HF)\Using CMR features``` folder.
-3. After predicting the genes, we pick the top ten predicted genes and perform the enrichment analysis using ```g:profiler```.
+3. After predicting the genes, we pick the top ten predicted genes and perform enrichment analysis using ```g:profiler```.
 
 ##### B.Without CMR features: 
 1. got to foldr To predict the gene-diases association without CMR features, run ```Predicting_gene_diseas_assoc_before_adding_CMR (HF).ipynb``` in ```Predicting gene-disease association (HF)/Without CMR features``` folder.
-2. After predicting the genes, we pick the top ten predicted genes and perform the enrichment analysis using ```g:profiler```.
+2. After predicting the genes, we pick the top ten predicted genes and perform enrichment analysis using ```g:profiler```.
 
-#### 2.Atrial Fibrrilation:
-You need to follow the same steps in HF, but you use the AF folders and files.
+#### 2.Atrial Fibrilation:
+Follow the same steps in HF, but use the AF folders and files.
 
 #### 3.Myocardial Infarction:
-You need to follow the same steps in HF and AF but you use the MI folders and files.
+Follow the same steps in HF and AF but use the MI folders and files.
 
-### Importnace of the CMR features and other entities:
+### Importance of the CMR features and other entities:
 Run the PageRank.ipynb script in the  ```Importance``` folder.
 ### Drug Repurposing:
 For each disease, run the script inside the folder that has the disease name.
