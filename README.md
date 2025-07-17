@@ -1,4 +1,7 @@
 ## CardioKG - A multi-modal vision knowledge graph of cardiovascular disease
+
+[![DOI](https://zenodo.org/badge/892096018.svg)](https://doi.org/10.5281/zenodo.16025952)
+
 Knowledge graph (KG) is a structured representation of knowledge in a graph format, consisting of nodes, which represent entities or concepts, and edges, which represent the relationships between those entities. It’s a way of organizing and representing information to facilitate machine understanding and reasoning. In a knowledge graph, entities are represented as nodes, relationships as edges, and attributes as properties of nodes or edges. This structure allows for flexible querying and inference, making it useful for various applications such as semantic search, data integration, recommendation systems, and more. Knowledge graphs are particularly valuable in capturing complex relationships and semantics inherent in data, enabling more advanced forms of artificial intelligence and knowledge discovery. In healthcare, a knowledge graph serves as a powerful tool for organising, integrating, and analysing vast amounts of medical information. It enables healthcare professionals, researchers, and AI systems to efficiently access, understand, and utilize complex medical knowledge and relationships such as gene-disease association. 
 
 ### Data extraction and preparation:
