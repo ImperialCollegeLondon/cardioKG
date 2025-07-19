@@ -58,5 +58,5 @@ Run the PageRank.ipynb script in the  ```Importance``` folder.
 For each disease, run the script inside the folder that has the disease name.
 
 ### Citation:
-Rjoob K, McGurk KA, Zheng SL, Curran L, Ibrahim M, Zeng L, Kim V, Tahasildar S, Kalaie S, Senevirathne DS, Gifani P, Losev V, Zheng J, Bai W, de Marvao A, Ware JS, Bender C, O’Regan DP. A multi-modal vision knowledge graph of cardiovascular disease. _medRxiv_. 2025
+Rjoob K, McGurk KA, Zheng SL, Curran L, Ibrahim M, Zeng L, Kim V, Tahasildar S, Kalaie S, Senevirathne DS, Gifani P, Losev V, Zheng J, Bai W, de Marvao A, Ware JS, Bender C, O’Regan DP. A multi-modal vision knowledge graph of cardiovascular disease. _medRxiv_. 2025:2025.07.17.25331359; doi: [10.1101/2025.07.17.25331359](https://doi.org/10.1101/2025.07.17.25331359).
    
