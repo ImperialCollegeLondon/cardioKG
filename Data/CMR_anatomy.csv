@@ -1,0 +1,22 @@
+Fname,Sname,Relationship,Value,fcol,scol
+RVEDVi,heart right ventricle,measures the ejection diastolic volume of,0,#85133F,#10FB04
+LVEDVi,heart left ventricle,measures the ejection diastolic volume of,0,#85133F,#10FB04
+RVESVi,heart right ventricle,measures the ejection systolic volume of,0,#85133F,#10FB04
+LVESVi,heart left ventricle,measures the ejection systolic volume of,0,#85133F,#10FB04
+LVSVi,heart left ventricle,measures the systolic volume of,0,#85133F,#10FB04
+RVSVi,heart right ventricle,measures the systolic volume of,0,#85133F,#10FB04
+LVEF,heart left ventricle,measures ejection fraction of,0,#85133F,#10FB04
+RVEF,heart right ventricle,measures ejection fraction of,0,#85133F,#10FB04
+LVMi,heart left ventricle,measures mass of,0,#85133F,#10FB04
+LVCO,heart left ventricle,measures cardiac output in,0,#85133F,#10FB04
+Ell_Global,heart left ventricle,is the global longitudinal strain of,0,#85133F,#10FB04
+circum_PDSR,heart left ventricle,is the rate to return to their original circumferential length in,0,#85133F,#10FB04
+longit_PDSR,heart left ventricle,is the relaxation rate in,0,#85133F,#10FB04
+radial_PDSR,heart left ventricle,is the rate to return to original thickness in,0,#85133F,#10FB04
+LAV_maxi,heart left atrium,measures the max volume of,0,#85133F,#10FB04
+LAV_mini,heart left atrium,measures the min volume of,0,#85133F,#10FB04
+RAV_maxi,heart right atrium,measures the max volume of,0,#85133F,#10FB04
+RAV_mini,heart right atrium,measures the min volume of,0,#85133F,#10FB04
+WT_Max_Global,heart left ventricle,measures the wall thickness of ,0,#85133F,#10FB04
+DAo_distensibility,aorta,is the distensibility of,0,#85133F,#10FB04
+AAo_distensibility,aorta,is the distensibility of,0,#85133F,#10FB04
